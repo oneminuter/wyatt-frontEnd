@@ -1,16 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PipesPipe } from './service/pipes.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
+    AppRoutingModule,
     BrowserModule
   ],
-  providers: [],
+  declarations: [AppComponent, PipesPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
